@@ -5,7 +5,7 @@ function warnOnce(msg: string) {
   let hasWarned = false;
   return () => {
     if (!hasWarned) {
-      console.warn(msg);
+      console.warn(msg +" hello");
       hasWarned = true;
     }
   };
